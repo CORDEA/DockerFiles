@@ -34,14 +34,12 @@ pathが通っている場所にdockerunの名前で保存して下さい。(私�
 mv dockerun.py /usr/local/bin/dockerun
 chown root:wheel /usr/local/bin/dockerun
 chmod 755 /usr/local/bin/dockerun
-
 ```
 
 で、Terminalを立ち上げて
 
 ```sh
 dockerun huge/hoge
-
 ```
 
 のようにすればコマンドとして働きます

@@ -22,6 +22,7 @@ docker run -it -u cordea -w /home/cordea --name hoge hoge/hoge
 
 
 また、デフォルトで`-it`オプションが付くようになっています。
+
 各オプションのデフォルト値を変更するために必要な箇所は`dockerun.py`の中にコメントで示してあります。
 
 ### コマンドとして利用する場合
@@ -34,14 +35,12 @@ pathが通っている場所にdockerunの名前で保存して下さい。(私�
 mv dockerun.py /usr/local/bin/dockerun
 chown root:wheel /usr/local/bin/dockerun
 chmod 755 /usr/local/bin/dockerun
-
 ```
 
 で、Terminalを立ち上げて
 
 ```sh
 dockerun huge/hoge
-
 ```
 
 のようにすればコマンドとして働きます
@@ -68,4 +67,5 @@ ubuntuのDockerfileは私が使いやすいようにカスタムしたimageを�
 
 *1:
 dotfiles.zipは私が使用している`.vimrc`や`.percol.d`と言った設定ファイルを固めて自サーバーに置いているものです。
+
 公開しておりませんので使用される場合、こちらは個々人で書き換えて下さい。

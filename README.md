@@ -44,28 +44,3 @@ dockerun huge/hoge
 ```
 
 のようにすればコマンドとして働きます
-
-
-　
-## Ubuntu/Dockerfile
-
-ubuntuのDockerfileは私が使いやすいようにカスタムしたimageを作成します。
-
-行っていることは以下の通りです。
-
-1. apt-get update
-* wget, zip, zsh, vim, python-pip のインストール
-* percol のインストール
-*  **huge** ユーザーの作成(`/home/huge`も同時に作成されます)
-* sudo コマンドをパスワード無しで通せるように`sudoers`に上書き
-* ユーザー変更, `/home/huge`に移る
-* dotfiles.zipをダウンロード *1
-* unzipで解凍, 展開
-* dotfiles, dotfiles.zipを削除
-* デフォルトのコマンドに`zsh`を指定して終了
-
-
-*1:
-dotfiles.zipは私が使用している`.vimrc`や`.percol.d`と言った設定ファイルを固めて自サーバーに置いているものです。
-
-公開しておりませんので使用される場合、こちらは個々人で書き換えて下さい。
